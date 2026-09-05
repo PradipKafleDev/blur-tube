@@ -2,6 +2,10 @@
   "name": "blur-tube",
   "private": true,
   "version": "0.0.0",
+  "author": {
+    "name": "Pradip Kafle",
+    "url": "https://github.com/PradipKafleDev"
+  },
   "license": "MIT",
   "type": "module",
   "scripts": {
