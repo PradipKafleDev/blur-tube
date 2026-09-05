@@ -5,14 +5,14 @@
  * should be blurred.
  */
 export type BlurTubeSettings = {
-    /** Blur the current video's title, channel name, and channel avatar. */
-    blurVideoDetails: boolean;
+  /** Blur the current video's title, channel name, and channel avatar. */
+  blurVideoDetails: boolean;
 
-    /** Blur thumbnails and titles in the playlist or queue panel. */
-    blurPlaylistItems: boolean;
+  /** Blur thumbnails and titles in the playlist or queue panel. */
+  blurPlaylistItems: boolean;
 
-    /** Blur thumbnails and titles for recommended videos. */
-    blurRecommendations: boolean;
+  /** Blur thumbnails and titles for recommended videos. */
+  blurRecommendations: boolean;
 };
 
 /**
@@ -22,9 +22,9 @@ export type BlurTubeSettings = {
  * unchanged until the user explicitly enables a setting.
  */
 export const DEFAULT_SETTINGS: BlurTubeSettings = {
-    blurVideoDetails: false,
-    blurPlaylistItems: false,
-    blurRecommendations: false,
+  blurVideoDetails: false,
+  blurPlaylistItems: false,
+  blurRecommendations: false,
 };
 
 /** Chrome local storage key used to persist BlurTube settings. */

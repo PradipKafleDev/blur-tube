@@ -14,12 +14,12 @@ body {
   min-width: 0;
   min-height: 0;
   font-family:
-          Inter,
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          sans-serif;
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background: #ffffff;
   color: #18181b;
 }
@@ -155,8 +155,8 @@ button {
   appearance: none;
   vertical-align: middle;
   transition:
-          background-color 150ms ease,
-          box-shadow 150ms ease;
+    background-color 150ms ease,
+    box-shadow 150ms ease;
 }
 
 .toggle:hover {
@@ -198,11 +198,7 @@ button {
   padding: 11px 12px;
   border: 1px solid #ffe0e0;
   border-radius: 10px;
-  background: linear-gradient(
-          135deg,
-          #fff7f7 0%,
-          #fff1f1 100%
-  );
+  background: linear-gradient(135deg, #fff7f7 0%, #fff1f1 100%);
 }
 
 .footer strong {

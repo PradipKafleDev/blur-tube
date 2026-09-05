@@ -1,4 +1,4 @@
-import {CLASS_NAMES} from "./content.ts";
+import { CLASS_NAMES } from "./content.ts";
 
 export const getVideoDetailsStyles = () => `
   html.${CLASS_NAMES.blurVideoDetails}

@@ -7,7 +7,7 @@ export default defineManifest({
   version: "1.0.0",
 
   description:
-      "A lightweight Chrome extension for blurring YouTube thumbnails, titles, and channel information.",
+    "A lightweight Chrome extension for blurring YouTube thumbnails, titles, and channel information.",
 
   permissions: ["storage"],
 
