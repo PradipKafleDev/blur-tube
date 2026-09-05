@@ -1,22 +1,22 @@
 import {CLASS_NAMES} from "./content.ts";
 
 export const getVideoDetailsStyles = () => `
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-watch-metadata h1,
 
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-watch-metadata h1 yt-formatted-string,
 
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-video-owner-renderer #avatar img,
 
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-video-owner-renderer yt-img-shadow img,
 
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-video-owner-renderer #channel-name,
 
-  html.${CLASS_NAMES.blurChannelThumbnail}
+  html.${CLASS_NAMES.blurVideoDetails}
     ytd-video-owner-renderer ytd-channel-name {
     filter: blur(20px) !important;
   }

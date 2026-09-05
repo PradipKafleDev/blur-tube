@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import {EyeOff, ListVideo, PanelRight, UserRound} from "lucide-react";
+import {
+  ListVideo,
+  PanelRight,
+  UserRound,
+} from "lucide-react";
 
 import {
   DEFAULT_SETTINGS,
@@ -39,58 +43,59 @@ function App() {
     });
   };
 
-  const enabled = Object.values(settings).some(Boolean);
-
   return (
       <main className="popup">
         <header className="header">
-          <div className="logo">
-            <EyeOff size={22} />
-          </div>
+          <img
+              src="/icons/icon48.png"
+              alt="BlurTube"
+              className="logo"
+          />
 
-          <div>
+          <div className="header-content">
             <h1>BlurTube</h1>
-            <p>Hide distracting YouTube content.</p>
+            <p>A cleaner, more focused YouTube experience</p>
           </div>
         </header>
 
-        <section className="status-card">
-          <div>
-            <strong>
-              {enabled ? "Privacy mode is on" : "Privacy mode is off"}
-            </strong>
+        <p className="section-title">
+          Privacy Controls
+        </p>
 
-            <span>
-            {enabled
-                ? "Your selected content is blurred."
-                : "Everything is visible normally."}
-          </span>
-          </div>
-        </section>
-
+        <div className="settings">
           <Setting
               icon={<UserRound size={18} />}
-              title="Channel thumbnail"
-              description="Blur the channel image below the video"
-              enabled={settings.blurChannelThumbnail}
-              onChange={(value) => updateSetting("blurChannelThumbnail", value)}
+              title="Blur video details"
+              description="Title, channel name and avatar"
+              enabled={settings.blurVideoDetails}
+              onChange={(value) => updateSetting("blurVideoDetails", value)}
           />
 
           <Setting
               icon={<ListVideo size={18} />}
-              title="Playlist videos"
-              description="Blur playlist thumbnails and titles"
+              title="Blur playlist videos"
+              description="Thumbnails and titles"
               enabled={settings.blurPlaylistItems}
-              onChange={(value) => updateSetting("blurPlaylistItems", value)}
+              onChange={(value) =>
+                  updateSetting("blurPlaylistItems", value)
+              }
           />
 
           <Setting
               icon={<PanelRight size={18} />}
-              title="Recommended videos"
-              description="Blur recommended thumbnails and titles"
+              title="Blur recommended videos"
+              description="Thumbnails and titles"
               enabled={settings.blurRecommendations}
-              onChange={(value) => updateSetting("blurRecommendations", value)}
+              onChange={(value) =>
+                  updateSetting("blurRecommendations", value)
+              }
           />
+        </div>
+
+        <footer className="footer">
+          <strong>Your video. Your focus.</strong>
+          <span>Blur the noise. Enjoy what you watch.</span>
+        </footer>
       </main>
   );
 }

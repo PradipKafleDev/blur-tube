@@ -1,24 +1,31 @@
 /**
  * User-configurable BlurTube privacy settings.
- * Each option controls which area of the YouTube watch page is blurred.
+ *
+ * Each option controls which section of the YouTube watch page
+ * should be blurred.
  */
 export type BlurTubeSettings = {
     /** Blur the current video's title, channel name, and channel avatar. */
-    blurChannelThumbnail: boolean;
+    blurVideoDetails: boolean;
 
-    /** Blur thumbnails and titles in the playlist / queue panel. */
+    /** Blur thumbnails and titles in the playlist or queue panel. */
     blurPlaylistItems: boolean;
 
     /** Blur thumbnails and titles for recommended videos. */
     blurRecommendations: boolean;
 };
 
-/** Default BlurTube settings used when no saved preference exists. */
+/**
+ * Default BlurTube settings used when no saved preferences exist.
+ *
+ * All privacy controls are disabled by default so YouTube remains
+ * unchanged until the user explicitly enables a setting.
+ */
 export const DEFAULT_SETTINGS: BlurTubeSettings = {
-    blurChannelThumbnail: false,
+    blurVideoDetails: false,
     blurPlaylistItems: false,
     blurRecommendations: false,
 };
 
-/** Key used to persist BlurTube settings in Chrome local storage. */
+/** Chrome local storage key used to persist BlurTube settings. */
 export const SETTINGS_KEY = "settings";

@@ -8,7 +8,7 @@ import {getPlaylistStyles, getRecommendationStyles, getVideoDetailsStyles} from 
 const STYLE_ID = "blur-tube-styles";
 
 export const CLASS_NAMES = {
-    blurChannelThumbnail: "blur-tube-channel-thumbnail",
+    blurVideoDetails: "blur-tube-video-details",
     blurPlaylistItems: "blur-tube-playlist-items",
     blurRecommendations: "blur-tube-recommendations",
 } satisfies Record<keyof BlurTubeSettings, string>;
